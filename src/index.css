@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* Full height layout */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Theme variables */
+@theme {
+  --color-tlop-orange: #F58B57;
+  --font-pablo: "Helvetica Neue", Helvetica, Arial, "Arial Black", sans-serif;
+}
+
+/* Base reset */
+:root {
+  font-family: var(--font-pablo);
+  line-height: 1.5;
+  font-weight: 400;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove ALL default anchor styling */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Body styling */
+body {
+  background-color: var(--color-tlop-orange);
+  color: black;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Buttons (clean neutral style) */
+button {
+  border-radius: 0;
+  border: 2px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: var(--color-tlop-orange);
+}
